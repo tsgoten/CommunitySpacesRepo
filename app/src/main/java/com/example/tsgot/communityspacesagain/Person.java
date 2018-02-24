@@ -6,16 +6,16 @@ class Person {
     private int areaOfRequest;
     private String plantGrowing;
     private long timeOfGrowth;
-    private String contacts[] = new String[2];
+    private String number;
     //position 0 is for phone number, position 1 is for email
 
     //constructor for person
-    public Person(String Name, int GardenArea, String nameOfPlant, long growthTime, String Contact[]) {
+    public Person(String Name, int GardenArea, String nameOfPlant, long growthTime, String number) {
         nameOfPerson = Name;
         areaOfRequest = GardenArea;
         plantGrowing = nameOfPlant;
         timeOfGrowth = growthTime;
-        contacts = Contact;
+        this.number = number;
     }
 
     //accessor methods
@@ -41,9 +41,26 @@ class Person {
         return timeOfGrowth;
     }
 
-    public String[] getContacts()
+    public String getContacts()
     {
-        return contacts;
+        return number;
     }
+
+    public void setNameOfPerson(String nameOfPerson) {
+        this.nameOfPerson = nameOfPerson;
+    }
+
+    public void setAreaOfRequest(int areaOfRequest) {
+        this.areaOfRequest = areaOfRequest;
+    }
+
+    public void setPlantGrowing(String plantGrowing) {
+        this.plantGrowing = plantGrowing;
+    }
+
+    public void setTimeOfGrowth(long timeOfGrowth) {
+        this.timeOfGrowth = timeOfGrowth;
+    }
+
 }
 

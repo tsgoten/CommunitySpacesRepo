@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> people = new ArrayList<>();
     public static final String PLOT_REQUESTED_EXTRA_KEY = "domaindotcom";
 
+    String username = "username";
+    int areaRequested = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonShowContacts = findViewById(R.id.buttonShowContacts);
         buttonRequestPlot = findViewById(R.id.buttonRequestPlot);
-
-
-
+        Person userPerson = new Person(username, areaRequested, "", 5, "50999939399");
     }
     public void onPlotRequested(View v){
         Intent intent = new Intent(MainActivity.this, MainActivityPlotRequest.class);
