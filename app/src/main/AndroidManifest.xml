@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivityPlotRequest"></activity>
+        <activity android:name=".MainActivityPlotRequest" />
+        <activity android:name=".MainActivityContactList"></activity>
     </application>
 
 </manifest>
