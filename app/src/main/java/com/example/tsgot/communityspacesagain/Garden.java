@@ -9,11 +9,11 @@ public class Garden {
     private int area;
 
 
-    public Garden(String Name, int zip, int x, int y, int Area) {
+    public Garden(String Name, int zip, int xdimension, int ydimension, int Area) {
         name = Name;
         zipCode = zip;
-        xDimensions = x;
-        yDimensions = y;
+        xDimensions = xdimension;
+        yDimensions = ydimension;
         area = Area;
     }
 
