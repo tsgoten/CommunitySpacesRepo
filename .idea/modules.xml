@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CommunitySpacesAgain.iml" filepath="$PROJECT_DIR$/CommunitySpacesAgain.iml" />
+      <module fileurl="file://C:\Users\leofe.DESKTOP-CH0BJLM\AndroidStudioProjects\CommunitySpacesRepo\CommunitySpacesAgain.iml" filepath="C:\Users\leofe.DESKTOP-CH0BJLM\AndroidStudioProjects\CommunitySpacesRepo\CommunitySpacesAgain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommunitySpacesRepo.iml" filepath="$PROJECT_DIR$/CommunitySpacesRepo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\leofe.DESKTOP-CH0BJLM\AndroidStudioProjects\CommunitySpacesRepo\app\app.iml" filepath="C:\Users\leofe.DESKTOP-CH0BJLM\AndroidStudioProjects\CommunitySpacesRepo\app\app.iml" />
     </modules>
   </component>
 </project>
