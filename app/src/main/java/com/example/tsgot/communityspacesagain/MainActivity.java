@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     TextView status;
     Button buttonShowContacts, buttonRequestPlot;
-    ArrayList<String> people = new ArrayList<>();
+    ArrayList<Person> people = new ArrayList<>();
     public static final String PLOT_REQUESTED_EXTRA_KEY = "domaindotcom";
 
     String username = "username";
@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
         buttonShowContacts = findViewById(R.id.buttonShowContacts);
         buttonRequestPlot = findViewById(R.id.buttonRequestPlot);
-        Person userPerson = new Person(username, areaRequested, "", 5, "50999939399");
+        Person userPerson = new Person(username, areaRequested, "", 5, "5099939399");
+
+        //setting random username for person etc.
+        people.add(new Person("lol", 43,"Tomatoes",4,"5028528757"));
+        people.add(new Person("wind", 23,"Oranges",7,"6828757437"));
+        people.add(new Person("fire", 13,"Potatoes",9,"4582843747"));
+        people.add(new Person("water", 33,"Onions",6,"5828238482"));
+        people.add(new Person("ice", 11,"Bananas",14,"4817572379"));
     }
     public void onPlotRequested(View v){
         Intent intent = new Intent(MainActivity.this, MainActivityPlotRequest.class);
