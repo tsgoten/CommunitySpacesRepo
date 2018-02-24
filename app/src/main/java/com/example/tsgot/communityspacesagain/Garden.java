@@ -8,7 +8,7 @@ public class Garden {
     private int yDimensions;
     private int area;
 
-
+//constructor
     public Garden(String Name, int zip, int xdimension, int ydimension, int Area) {
         name = Name;
         zipCode = zip;
