@@ -17,7 +17,7 @@ public class Garden {
         area = Area;
     }
 
-
+//accessor method
     public String getName() {
         return name;
     }
