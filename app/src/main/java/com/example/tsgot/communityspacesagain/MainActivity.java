@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void setAReaTextView(){
-        area.setText("Area occupied" + areaRequested + "sq ft");
+        area.setText("Area occupied " + areaRequested + " sq ft");
     }
 }
