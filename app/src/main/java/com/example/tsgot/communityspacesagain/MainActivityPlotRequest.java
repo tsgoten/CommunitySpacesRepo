@@ -19,8 +19,7 @@ public class MainActivityPlotRequest extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_plot_request);
 
-        final Intent thisIntent = getIntent();
-        thisIntent.getStringExtra(PLOT_REQUESTED_EXTRA_KEY);
+
 
 
         editTextAreaRequest = findViewById(R.id.editText);
@@ -30,6 +29,9 @@ public class MainActivityPlotRequest extends MainActivity {
                 if (i == EditorInfo.IME_ACTION_DONE) {
                     InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(editTextAreaRequest.getWindowToken(), 0);
+                    Intent resultIntent = new Intent();
+                    resultIntent.putExtra(PLOT_REQUESTED_EXTRA_STRING, editTextAreaRequest.getText().toString());
+                    setResult(MainActivity.RESULT_OK, resultIntent);
                     finish();
                     return true;
 
