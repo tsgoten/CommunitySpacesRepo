@@ -17,6 +17,9 @@ public class MainActivityContactList extends MainActivity {
 
         contactListView = findViewById(R.id.contactList);
 
+        myAdapter = new CustomAdapter(this, R.layout.list_view, people);
+        contactListView.setAdapter(myAdapter);
+        contactListView.setClickable(false);
 
     }
 }

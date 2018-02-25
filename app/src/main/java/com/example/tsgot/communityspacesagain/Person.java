@@ -41,7 +41,7 @@ class Person {
         return timeOfGrowth;
     }
 
-    public String getContacts()
+    public String getNumber()
     {
         return number;
     }
